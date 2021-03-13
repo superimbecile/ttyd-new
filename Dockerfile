@@ -1,5 +1,5 @@
 FROM tsl0922/ttyd
-VOLUME ["/dev/shm"]
+VOLUME ["/var/run/docker.sock"]
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
 CMD ["ttyd", "bash"]
